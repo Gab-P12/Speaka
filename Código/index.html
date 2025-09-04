@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speaka Idiomas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>🌍 Speaka Idiomas</h1>
+    <p>Aprenda inglês e espanhol de forma divertida e personalizada!</p>
+  </header>
+
+  <!-- Planos -->
+  <section class="planos">
+    <h2>Nossos Planos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Light</h3>
+        <p>1x por semana</p>
+        <p class="preco">R$ 120/mês</p>
+      </div>
+      <div class="card">
+        <h3>Regular</h3>
+        <p>2x por semana</p>
+        <p class="preco">R$ 220/mês</p>
+      </div>
+      <div class="card">
+        <h3>Intensivo</h3>
+        <p>3x por semana</p>
+        <p class="preco">R$ 310/mês</p>
+      </div>
+      <div class="card">
+        <h3>Full</h3>
+        <p>4x por semana</p>
+        <p class="preco">R$ 390/mês</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulário de contato -->
+  <section class="contato">
+    <h2>Fale com a gente</h2>
+    <form id="contactForm" action="https://formspree.io/f/{SEU_ID_AQUI}" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu email" required>
+      <textarea name="message" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="msgStatus"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
