@@ -1,71 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #fdd835, #ba68c8);
-  color: #333;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6A1B9A, #BA68C8, #FDD835);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 header {
-  padding: 2rem;
-  background: #fff3;
+  padding: 300px;
+  background-image: url("https://github.com/Gab-P12/TestRepostoryII/blob/main/Branding/Painel%20Speaka%202.png?raw=true");
+  background-size: cover;   /* makes the image fill the space */
+  background-position: center;
 }
 
-.planos {
-  padding: 2rem;
+nav {
+    background: linear-gradient(90deg, #6a0dad, #8a2be2);;
+    padding: 10px;
+    font-size: 30px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
 }
 
-.card {
-  background: white;
-  padding: 1rem;
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.page {
+    display: none;
+    padding: 50px;
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease-in-out;
+    font-size: 30px;
+}
+
+:target {
+    display: block;
+}
+
+:target:not(#home) ~ #home {
+    display: none;
+}
+
+.linha{
+  display: centerlized;         
+  flex-direction: row;    
+  gap: 16px;              
+  align-items: stretch;   
+ 
+}
+
+.container1{
+  flex: 1;                
+  padding: 16px;
+  background: transparent;
   border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);    
 }
 
-.card h3 {
-  color: #6a1b9a;
+.container2{
+  flex: 1;                
+  padding: 16px;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);    
 }
 
-.preco {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #f57c00;
+.container1 img {
+    width: 500px;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 3px;
 }
 
-.contato {
-  padding: 2rem;
-  background: #fff3;
+.container2 img {
+    width: 500px;
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 5px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  max-width: 400px;
-  margin: auto;
+@media (max-width: 768px){
+  .linha{ flex-direction: column; }
 }
 
-input, textarea {
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+.page {
+    padding: 50px;
+    font-size: 30px;
+    max-width: 800px;
+    margin: auto;
 }
 
-button {
-  background: #6a1b9a;
-  color: white;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 8px;
-  cursor: pointer;
+.planos-page img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
-button:hover {
-  background: #4a148c;
+.contato-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato-page input, 
+.contato-page textarea {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contato-page button {
+    background: #8a2be2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.contato-page button:hover {
+    background: #6a0dad;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    color: #752FA9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D4B0E6;
+    text-decoration: underline;
+}
+
+.contato-page a {
+    color: #E4C8F6;
+}
+
+.portfolio-gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.portfolio-gallery image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.art-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(25, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+}
+
+.art-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.art-item img:hover {
+    transform: scale(1.8);
+}
+
+#popup-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#popup-modal.hidden {
+    display: none;
+}
+
+#popup-modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+#close-popup {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
 }
