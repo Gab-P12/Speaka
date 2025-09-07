@@ -1,57 +1,91 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Speaka Idiomas</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaka</title>
+    <link rel="stylesheet" href="Style.CSS">
+    <script src="Script.js" defer></script>
 </head>
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <h1>🌍 Speaka Idiomas</h1>
-    <p>Aprenda inglês e espanhol de forma divertida e personalizada!</p>
-  </header>
+  <header> </header>
+  <p>Aprenda inglês de forma divertida, leve e personalizada.</p> 
+  
+    <nav>
+    <a href="#home">♢ Home ♢</a>
+    <a href="#metodo">♢ Nosso Método ♢</a>
+    <a href="#planos">♢ Planos ♢</a>
+    <a href="#contato">♢ Fale com a Gente ♢</a>
+</nav>
 
-  <!-- Planos -->
-  <section class="planos">
-    <h2>Nossos Planos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Light</h3>
-        <p>1x por semana</p>
-        <p class="preco">R$ 120/mês</p>
+    <section id="home" class="page">
+    <div class="Home-page">
+        <h2>Sobre a Speaka</h2>
+      <p>Bem vindo a Speaka!</p>
+    
+<p>A Speaka nasceu com o objetivo de transformar o aprendizado de idiomas em algo próximo, criativo e acessível.</p>
+  
+  
+<p>Aqui, cada aluno é tratado como único: nossas aulas são personalizadas para se adaptar ao seu ritmo, seus interesses e seus objetivos.</p>
+
+
+Nossa missão é garantir que você vai alcansar sua fluência de forma descomplicada</p>
+        </div> </section>
+      
+        <section id="metodo" class="page">
+    <div class="Metodo-page">
+        <h2>Nossa Metodologia</h2>
+        <p>Nada de aulas engessadas! Acreditamos que aprender é mais fácil quando faz sentido no seu dia a dia.
+Por isso, nossas aulas são:</p>
+      
+    <p>
+° Interativas e dinâmicas</p>
+
+    <p>
+° Baseadas em situações reais, tanto formais quanto informais</p>
+    <p>
+° Com material exclusivo já incluso</p>
+    <p>
+° Sempre voltadas para conversação desde o início</p>
+      <p>
+° O aluno não é limitado a uma única variação do idioma</p>
+      
+      <div class="linha">
+      <div class="container1">
+<img src="https://github.com/Gab-P12/TestRepostoryII/blob/main/Pictures/firstesteps%20for%20website.png?raw=true" alt="First Steps">
       </div>
-      <div class="card">
-        <h3>Regular</h3>
-        <p>2x por semana</p>
-        <p class="preco">R$ 220/mês</p>
+      
+      <div class="container2">
+<img src="https://github.com/Gab-P12/TestRepostoryII/blob/main/Pictures/Market%20Leader%20for%20website.png?raw=true" alt="Market Leader">
+</div>
+        
+     <div class="container1">
+<img src="https://github.com/Gab-P12/TestRepostoryII/blob/main/Pictures/Gold%20FCE%20first%20for%20website.png?raw=true" alt="Glod FCE First">
       </div>
-      <div class="card">
-        <h3>Intensivo</h3>
-        <p>3x por semana</p>
-        <p class="preco">R$ 310/mês</p>
-      </div>
-      <div class="card">
-        <h3>Full</h3>
-        <p>4x por semana</p>
-        <p class="preco">R$ 390/mês</p>
-      </div>
-    </div>
+    </div> </section>
+      
+
+    <section id="planos" class="page">
+      <div class="Planos-page">
+        <h2>Conheça nossos Planos</h2>
+      <p>
+Light → 1x por semana · R$ 120/mês</p>
+
+<p>Regular → 2x por semana · R$ 220/mês</p>
+
+<p>Intensivo → 3x por semana · R$ 310/mês</p>
+
+<p>Full → 4x por semana · R$ 390/mês</p>
+        
+<p>✔️ Material incluso em todos os planos</p>
+    </section>
+    
+    <section id="contato" class="page">
+    <div class="Contato-page">
+        <h2>Fale com a Gente</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdKCwqAzcPR2PFFloGP_0PJlnLnUt1A-kNFEUk1tKyS-SkRnQ/viewform?embedded=true" width="680" height="980" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
   </section>
-
-  <!-- Formulário de contato -->
-  <section class="contato">
-    <h2>Fale com a gente</h2>
-    <form id="contactForm" action="https://formspree.io/f/{SEU_ID_AQUI}" method="POST">
-      <input type="text" name="name" placeholder="Seu nome" required>
-      <input type="email" name="email" placeholder="Seu email" required>
-      <textarea name="message" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p id="msgStatus"></p>
-  </section>
-
-  <script src="script.js"></script>
+   
 </body>
+    
 </html>
